@@ -20,8 +20,13 @@
 
 /* USB Device descriptor parameter */
 #define DEVICE_VER 0x0001
+#if ENABLE_APPLE_FN_KEY
+#define VENDOR_ID 0x05AC
+#define PRODUCT_ID 0x021E
+#else
 #define VENDOR_ID 0x320F
 #define PRODUCT_ID 0x5044
+#endif
 #define MANUFACTURER Glorious
 #define PRODUCT GMMK Pro
 
